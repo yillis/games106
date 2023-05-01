@@ -6,6 +6,8 @@ struct VSInput
 [[vk::location(1)]] float3 Normal : NORMAL0;
 [[vk::location(2)]] float2 UV : TEXCOORD0;
 [[vk::location(3)]] float3 Color : COLOR0;
+[[vk::location(4)]] float3 jointIndices : COLOR1;
+[[vk::location(5)]] float3 jointWeights : COLOR2;
 };
 
 struct UBO
